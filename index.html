@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="game center">
+            <div class="attempt_box center active" id="attempt_count_box">
+                <h2>NO.OF.ATTEMPTS</h2>
+                <div class="attempt_count center">
+                    <p id="attempts" class="count_circle center"></p>
+                </div>
+            </div>
+            <div class="game_box center">
+                <h1>NUMBER GUESSING GAME</h1>
+                <p>Guess the number between 1 - 100</p>
+                <p>Enter the number: </p>
+                <form action="" class="center">
+                    <input type="text" id="guessed_number" required>
+                    <button type="submit" id="submited" class="submit_buttion">Check</button>
+                </form>
+                <p id="temp_result_text"></p>
+            </div>
+        </div>
+        <div class="result center" id="result_box">
+            <h1 id="result_txt1"></h1>
+            <h1 id="result_txt2"></h1>
+        </div>
+    </body>
+    <script rel="stylesheet" src="index.js"></script>
+</html>

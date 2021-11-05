@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    height: 100vh;
+}
+
+body {
+    background: linear-gradient( to left, orange, pink);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_box, .result{
+    width: 500px;
+    height: 290px;
+    background: white;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.attempt_box {
+    display: none;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    background: transparent;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+.attempt_box.active {
+    display: flex;
+}
+
+.count_circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px 70px 70px 70px;
+    background: orange;
+    color: red;
+    text-align: center;
+    font-size: xx-large;
+    margin: 20px;
+}
+
+.game_box :is(h1, p, form) {
+    margin: 8px;
+}
+
+form {
+    flex-direction: column;
+}
+
+form input {
+    margin-bottom: 10px;
+    height: 30px;
+    width: 350px;
+    border: none;
+    outline: none;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    font-size: large;
+    text-align: center;
+    background: linear-gradient(to bottom right, orange, pink);
+}
+
+.submit_buttion {
+    margin-top: 10px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: small;
+    text-align: center;
+    box-shadow: 2px 2px black;
+    background: linear-gradient(to bottom right, orange, pink);
+    cursor: pointer;
+}
+
+.result {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.result.active {
+    display: flex;
+}
